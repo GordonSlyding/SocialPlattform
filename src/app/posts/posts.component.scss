@@ -1,0 +1,53 @@
+.card {
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        padding-left: 16px;
+        padding-right: 16px;
+        color: rgb(129, 129, 129);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+    }
+
+    button {
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        height: 32px;
+        background-color: white;
+        border: unset;
+        border-top: 1px solid rgba(0,0,0,0.3);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:first-child {
+            left: 0;
+        }
+        &:last-child {
+            right: 0;
+            border-left: 1px solid rgba(0,0,0,0.3);
+        }
+
+        &:hover {
+            background-color: rgb(223, 223, 223);
+        }
+    }
+
+    mat-icon {
+        padding-top: 4px;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+
+}
